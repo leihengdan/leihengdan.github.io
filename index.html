@@ -249,7 +249,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/23/逝者如斯夫/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/24/怎样从本地删除git远程仓库里面的文件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Battlestorm">
@@ -268,7 +268,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/23/逝者如斯夫/" itemprop="url">逝者如斯夫</a></h1>
+                <a class="post-title-link" href="/2017/12/24/怎样从本地删除git远程仓库里面的文件/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -280,8 +280,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-23T19:13:22+08:00">
-                2017-12-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-24T16:41:54+08:00">
+                2017-12-24
               </time>
             
 
@@ -320,7 +320,44 @@
       
         
           
-            
+            <h1 id="怎样从本地删除git远程仓库里面的文件"><a href="#怎样从本地删除git远程仓库里面的文件" class="headerlink" title="怎样从本地删除git远程仓库里面的文件"></a>怎样从本地删除git远程仓库里面的文件</h1><hr>
+<ul>
+<li><ol>
+<li><code>git pull</code><br>将远程代码pull到本地，保持本地仓库跟远端仓库同步。  </li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p><img src="https://i.imgur.com/cGdXWHX.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><ol>
+<li><code>git re 文件名</code><br>然后我们使用git rm命令删掉要删除的文件。  </li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p><img src="https://i.imgur.com/39g9z2v.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><ol>
+<li><code>git commit -m &quot;原因&quot;</code><br>删除之后，本地目录下已经删除的文件夹就不再存在了，为了能将远程仓库的相应文件也删除掉，我们要把这次操作提交到上去</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p><img src="https://i.imgur.com/CC8Fx6P.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li><ol>
+<li><code>git push</code><br>可以看到代码中显示我们删掉了README文件，然后将更改push到远程</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p><img src="https://i.imgur.com/8kCukBR.jpg" alt=""></p>
+</blockquote>
+
           
         
       
